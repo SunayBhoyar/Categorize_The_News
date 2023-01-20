@@ -13,7 +13,7 @@ class ApiServices {
   // var newsQuery = "india";
   Future<List<Article>> getArticle(var newsQuery) async {
     final endPointUrl =
-        "https://newsapi.org/v2/everything?q=$newsQuery&apiKey=716addab3492407aaa6516a8726cc119";
+        "https://newsapi.org/v2/everything?q=$newsQuery&apiKey=<<apihere>>";
     Response res = await get(Uri.parse(endPointUrl));
 
     if (res.statusCode == 200) {
